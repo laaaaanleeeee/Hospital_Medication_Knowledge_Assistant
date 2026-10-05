@@ -1,0 +1,70 @@
+[
+    {
+        "query": "Voltaren được dùng để điều trị những bệnh gì?",
+        "expected_drug": "Voltaren 75mg/3ml Novartis",
+        "expected_sections": [
+            "Chỉ định",
+            "Công dụng Voltaren 75mg/3ml Novartis"
+        ]
+    },
+    {
+        "query": "Voltaren có những chống chỉ định nào?",
+        "expected_drug": "Voltaren 75mg/3ml Novartis",
+        "expected_sections": [
+            "Chống chỉ định"
+        ]
+    },
+    {
+        "query": "Voltaren có những tác dụng phụ gì?",
+        "expected_drug": "Voltaren 75mg/3ml Novartis",
+        "expected_sections": [
+            "Tác dụng ngoài ý muốn",
+            "Tác dụng phụ"
+        ]
+    },
+    {
+        "query": "Pepsane được sử dụng trong trường hợp nào?",
+        "expected_drug": "Pepsane 10g Rosa Phytopharma",
+        "expected_sections": [
+            "Chỉ định",
+            "Công dụng Pepsane 10g Rosa Phytopharma"
+        ]
+    },
+    {
+        "query": "Panfor SR-500 có liều dùng như thế nào?",
+        "expected_drug": "Panfor SR-500 dạng viên nén phóng thích chậm",
+        "expected_sections": [
+            "Liều lượng - Cách dùng",
+            "Liều lượng & Cách dùng"
+        ]
+    },
+    {
+        "query": "Voltaren có những thành phần hoạt chất nào?",
+        "expected_drug": "Voltaren 75mg/3ml Novartis",
+        "expected_sections": [
+            "Thành phần hoạt chất",
+            "Thông tin về hoạt chất: Diclofenac"
+        ]
+    },
+    {
+        "query": "Pepsane có những tương tác thuốc nào?",
+        "expected_drug": "Pepsane 10g Rosa Phytopharma",
+        "expected_sections": [
+            "Tương tác"
+        ]
+    },
+    {
+        "query": "Pepsane có dùng được cho phụ nữ mang thai không?",
+        "expected_drug": "Pepsane 10g Rosa Phytopharma",
+        "expected_sections": [
+            "Lưu ý sử dụng trên phụ nữ mang thai và bà mẹ cho con bú"
+        ]
+    },
+    {
+        "query": "No-spa 40mg có liều dùng như thế nào?",
+        "expected_drug": "No-spa 40mg Sanofi - Drotaverine hydrochloride",
+        "expected_sections": [
+            "Liều lượng - Cách dùng"
+        ]
+    }
+]

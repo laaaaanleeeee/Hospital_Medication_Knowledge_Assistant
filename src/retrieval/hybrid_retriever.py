@@ -113,6 +113,7 @@ class HybridRetriever:
 
     def _make_chunk_id(self, metadata):
         return (
-            f"{metadata['drug_id']}_"
-            f"{metadata['chunk_index']}"
+            metadata["drug_id"],
+            metadata["section"],
+            metadata["chunk_index"],
         )

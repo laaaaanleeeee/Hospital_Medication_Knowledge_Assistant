@@ -1,0 +1,267 @@
+{
+  "description": "HMKA retrieval evaluation queries. Positive labels are based on drug/section metadata observed in the provided chunks.jsonl; manually verify each target section/content before reporting final metrics. Negative queries are clearly outside the medication-document domain.",
+  "version": "1.0",
+  "queries": [
+    {
+      "id": "Q01",
+      "query": "Voltaren có những chống chỉ định nào?",
+      "answerable": true,
+      "expected_drug": "Voltaren 75mg/3ml Novartis",
+      "expected_sections": [
+        "Chống chỉ định"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q02",
+      "query": "Những tác dụng không mong muốn nào được ghi nhận với Voltaren?",
+      "answerable": true,
+      "expected_drug": "Voltaren 75mg/3ml Novartis",
+      "expected_sections": [
+        "Tác dụng ngoài ý muốn"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q03",
+      "query": "Tài liệu ghi liều lượng và cách dùng Voltaren như thế nào?",
+      "answerable": true,
+      "expected_drug": "Voltaren 75mg/3ml Novartis",
+      "expected_sections": [
+        "Liều lượng & Cách dùng"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q04",
+      "query": "Voltaren được chỉ định trong những trường hợp nào?",
+      "answerable": true,
+      "expected_drug": "Voltaren 75mg/3ml Novartis",
+      "expected_sections": [
+        "Chỉ định"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q05",
+      "query": "Hoạt chất và hàm lượng của Voltaren 75mg/3ml là gì?",
+      "answerable": true,
+      "expected_drug": "Voltaren 75mg/3ml Novartis",
+      "expected_sections": [
+        "Thành phần hoạt chất"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q06",
+      "query": "Beatil 4mg/5mg có những chống chỉ định nào?",
+      "answerable": true,
+      "expected_drug": "Beatil 4mg/5mg",
+      "expected_sections": [
+        "Chống chỉ định"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q07",
+      "query": "Các tác dụng phụ của Beatil 4mg/5mg là gì?",
+      "answerable": true,
+      "expected_drug": "Beatil 4mg/5mg",
+      "expected_sections": [
+        "Tác dụng phụ"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q08",
+      "query": "Beatil 4mg/5mg có những tương tác thuốc nào được nêu trong tài liệu?",
+      "answerable": true,
+      "expected_drug": "Beatil 4mg/5mg",
+      "expected_sections": [
+        "Tương tác thuốc"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q09",
+      "query": "Tài liệu hướng dẫn liều dùng Beatil 4mg/5mg ra sao?",
+      "answerable": true,
+      "expected_drug": "Beatil 4mg/5mg",
+      "expected_sections": [
+        "Liều lượng - Cách dùng",
+        "Liều dùng Perindopril"
+      ],
+      "relevance_note": "Thông tin liều dùng của Beatil được phân bố ở cả mục Liều lượng - Cách dùng và Liều dùng Perindopril."
+    },
+    {
+      "id": "Q10",
+      "query": "Beatil 4mg/5mg chứa hoạt chất nào?",
+      "answerable": true,
+      "expected_drug": "Beatil 4mg/5mg",
+      "expected_sections": [
+        "Thành phần hoạt chất"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q11",
+      "query": "Nebilet có chống chỉ định gì?",
+      "answerable": true,
+      "expected_drug": "Nebilet",
+      "expected_sections": [
+        "Chống chỉ định"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q12",
+      "query": "Những tác dụng phụ nào của Nebilet được liệt kê?",
+      "answerable": true,
+      "expected_drug": "Nebilet",
+      "expected_sections": [
+        "Tác dụng phụ"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q13",
+      "query": "Có thông tin nào về tương tác thuốc của Nebilet?",
+      "answerable": true,
+      "expected_drug": "Nebilet",
+      "expected_sections": [
+        "Tương tác thuốc"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q14",
+      "query": "Tài liệu nêu liều lượng và cách dùng Nebilet như thế nào?",
+      "answerable": true,
+      "expected_drug": "Nebilet",
+      "expected_sections": [
+        "Liều lượng - Cách dùng"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q15",
+      "query": "Hoạt chất của Nebilet là gì?",
+      "answerable": true,
+      "expected_drug": "Nebilet",
+      "expected_sections": [
+        "Thành phần hoạt chất"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q16",
+      "query": "Medsolu 16 mg có những chống chỉ định nào?",
+      "answerable": true,
+      "expected_drug": "Medsolu 16 mg",
+      "expected_sections": [
+        "Chống chỉ định"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q17",
+      "query": "Tài liệu ghi nhận tác dụng phụ nào của Medsolu 16 mg?",
+      "answerable": true,
+      "expected_drug": "Medsolu 16 mg",
+      "expected_sections": [
+        "Tác dụng phụ"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q18",
+      "query": "Liều dùng và cách dùng Medsolu 16 mg được ghi như thế nào?",
+      "answerable": true,
+      "expected_drug": "Medsolu 16 mg",
+      "expected_sections": [
+        "Liều lượng - Cách dùng"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q19",
+      "query": "Nexium 10mg dạng cốm có những chống chỉ định nào?",
+      "answerable": true,
+      "expected_drug": "Nexium 10mg dạng cốm pha hỗn dịch uống",
+      "expected_sections": [
+        "Chống chỉ định"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q20",
+      "query": "Nexium 10mg dạng cốm có tương tác thuốc nào được nêu?",
+      "answerable": true,
+      "expected_drug": "Nexium 10mg dạng cốm pha hỗn dịch uống",
+      "expected_sections": [
+        "Tương tác thuốc"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q21",
+      "query": "Những tác dụng phụ nào được nêu cho Nexium 10mg dạng cốm?",
+      "answerable": true,
+      "expected_drug": "Nexium 10mg dạng cốm pha hỗn dịch uống",
+      "expected_sections": [
+        "Tác dụng phụ"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q22",
+      "query": "Tài liệu hướng dẫn liều dùng Nexium 10mg dạng cốm như thế nào?",
+      "answerable": true,
+      "expected_drug": "Nexium 10mg dạng cốm pha hỗn dịch uống",
+      "expected_sections": [
+        "Liều lượng - Cách dùng"
+      ],
+      "relevance_note": "Nhãn mục tiêu dựa trên metadata trong chunks.jsonl; cần kiểm tra thủ công nội dung chunk trước khi dùng làm benchmark chính thức."
+    },
+    {
+      "id": "Q23",
+      "query": "Ngày mai thời tiết Hà Nội có mưa không?",
+      "answerable": false,
+      "expected_drug": null,
+      "expected_sections": [],
+      "relevance_note": "Câu hỏi ngoài phạm vi dữ liệu thuốc; dùng để kiểm tra từ chối trả lời."
+    },
+    {
+      "id": "Q24",
+      "query": "Hãy gợi ý lịch trình du lịch Đà Nẵng 3 ngày 2 đêm.",
+      "answerable": false,
+      "expected_drug": null,
+      "expected_sections": [],
+      "relevance_note": "Câu hỏi ngoài phạm vi dữ liệu thuốc; dùng để kiểm tra từ chối trả lời."
+    },
+    {
+      "id": "Q25",
+      "query": "Ai là tổng thống hiện tại của Hoa Kỳ?",
+      "answerable": false,
+      "expected_drug": null,
+      "expected_sections": [],
+      "relevance_note": "Câu hỏi ngoài phạm vi dữ liệu thuốc; dùng để kiểm tra từ chối trả lời."
+    },
+    {
+      "id": "Q26",
+      "query": "Viết giúp tôi một đoạn thơ về mùa thu.",
+      "answerable": false,
+      "expected_drug": null,
+      "expected_sections": [],
+      "relevance_note": "Câu hỏi ngoài phạm vi dữ liệu thuốc; dùng để kiểm tra từ chối trả lời."
+    },
+    {
+      "id": "Q27",
+      "query": "Tính 123 nhân 456 bằng bao nhiêu?",
+      "answerable": false,
+      "expected_drug": null,
+      "expected_sections": [],
+      "relevance_note": "Câu hỏi ngoài phạm vi dữ liệu thuốc; dùng để kiểm tra từ chối trả lời."
+    }
+  ]
+}
